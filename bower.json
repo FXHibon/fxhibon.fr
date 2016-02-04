@@ -1,0 +1,21 @@
+{
+  "name": "Profile",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "FXHibon <hibonfx@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/FXHibon/Profile",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#3.0.3"
+  }
+}
