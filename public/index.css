@@ -1,37 +1,9 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
 body {
-    align-items: center;
     display: flex;
-}
-
-.main-container {
-    flex-grow: 1;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.column {
-    display: flex;
+    min-height: 100vh;
     flex-direction: column;
 }
 
-.center {
-    justify-content: center;
-}
-
-.photo-profil {
-    border-radius: 50%;
-}
-
-.social-actions {
-    border: rgba(14, 27, 172, 0.36) solid 2px;
-    border-radius: 12px;
-    padding: 9px;
+main {
+    flex: 1 0 auto;
 }
