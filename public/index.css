@@ -32,3 +32,33 @@ a .fa:hover {
 .margin-bottom {
     margin-bottom: 23px;
 }
+
+#top-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#minus-margin {
+    margin-right: 0;
+}
+
+.animated {
+    margin: 45px;
+    animation: rotate 4s linear 0s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
