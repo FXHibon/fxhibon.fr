@@ -11,3 +11,7 @@ body {
 a .fa {
     color: #eceff1;
 }
+
+.card .card-content {
+    border-radius: 0 0 0 0;
+}
