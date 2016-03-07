@@ -1,13 +1,13 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
+    align-items: center;
     display: flex;
-    min-height: 100vh;
-    flex-direction: column;
 }
 
-main {
-    flex: 1 0 auto;
-}
-
-main a .fa {
+a .fa {
     color: #eceff1;
 }
