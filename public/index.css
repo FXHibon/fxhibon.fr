@@ -10,8 +10,25 @@ body {
 
 a .fa {
     color: #eceff1;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+a .fa:hover {
+    color: #b0bec5;
 }
 
 .card .card-content {
     border-radius: 0 0 0 0;
+}
+
+.card .emphasis {
+    font-size: 23px;
+}
+
+.margin-bottom {
+    margin-bottom: 23px;
 }
