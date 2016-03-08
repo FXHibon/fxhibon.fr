@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "normalize-css": "normalize.css#3.0.3"
+    "font-awesome": "4.5.0",
+    "Materialize": "materialize#0.97.5"
   }
 }
