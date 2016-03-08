@@ -55,7 +55,6 @@ a .fa:hover {
 
 img {
     border: solid 5px white;
-    box-shadow: 0 0 10px 0 black;
 }
 
 @keyframes rotate {
