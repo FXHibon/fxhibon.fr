@@ -53,12 +53,17 @@ a .fa:hover {
     animation: rotate 4s linear 0s infinite;
 }
 
+img {
+    border: solid 5px white;
+    box-shadow: 0 0 10px 0 black;
+}
+
 @keyframes rotate {
     from {
-        transform: rotateY(0deg);
+        transform: rotateY(0deg) rotate(0deg) scale(1);
     }
 
     to {
-        transform: rotateY(360deg);
+        transform: rotateY(360deg) rotate(360deg) scale(2);
     }
 }
