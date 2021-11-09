@@ -1,12 +1,10 @@
-FROM node:7
-
-LABEL MAINTAINER "François-Xavier Hibon <hibonfx@gmail.com>"
+FROM node:17
 
 ADD . /app
 
 WORKDIR /app
 
-RUN npm install -g bower && npm install && bower install --allow-root
+RUN npm install -g bower && npm install
 
 EXPOSE 9000
 
