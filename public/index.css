@@ -29,6 +29,10 @@ a .fa:hover {
     font-size: 23px;
 }
 
+.card-action i{
+    color: #e0e0e0;
+}
+
 .margin-bottom {
     margin-bottom: 23px;
 }

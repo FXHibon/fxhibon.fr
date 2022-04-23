@@ -1,5 +1,5 @@
 {
-  "name": "Profile",
+  "name": "fxhibon.fr",
   "description": "",
   "main": "app.js",
   "authors": [
@@ -16,7 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "4.5.0",
-    "Materialize": "materialize#0.97.5"
+    "font-awesome": "6.1.1",
+    "materialize": "1.0.0",
+    "jquery": "3.6.0"
   }
 }
