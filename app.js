@@ -8,7 +8,7 @@ var app = express();
 
 app.use(express.static('public'));
 
-var port = 9000;
+var port = 80;
 
 app.listen(port, function() {
     console.log('Listening on %d', port);
