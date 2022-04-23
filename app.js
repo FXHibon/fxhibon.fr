@@ -8,7 +8,9 @@ var app = express();
 
 app.use(express.static('public'));
 
-var port = 80;
+console.log(process.env);
+
+var port = process.env.PORT || 9000;
 
 app.listen(port, function() {
     console.log('Listening on %d', port);
