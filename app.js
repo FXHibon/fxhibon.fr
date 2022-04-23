@@ -8,8 +8,6 @@ var app = express();
 
 app.use(express.static('public'));
 
-console.log(process.env);
-
 var port = process.env.PORT || 9000;
 
 app.listen(port, function() {
