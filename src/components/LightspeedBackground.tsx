@@ -1,13 +1,13 @@
 import { useEffect, useRef } from 'react';
 
 const WORDS = [
-  "Kubernetes", "Docker", "Terraform", "AWS", "GCP", "Azure", 
-  "Linux", "Ansible", "Go", "Rust", "Python", "TypeScript", 
-  "React", "Node.js", "GraphQL", "gRPC", "PostgreSQL", "Redis", 
-  "Kafka", "Elasticsearch", "Prometheus", "Grafana", "CI/CD", 
-  "GitOps", "ArgoCD", "Istio", "Envoy", "Nginx", "Bash", 
+  "Kubernetes", "Docker", "Terraform", "AWS", "GCP", "Azure",
+  "Linux", "Ansible", "Go", "Rust", "Python", "TypeScript",
+  "React", "Node.js", "GraphQL", "gRPC", "PostgreSQL", "Redis",
+  "Kafka", "Elasticsearch", "Prometheus", "Grafana", "CI/CD",
+  "GitOps", "ArgoCD", "Istio", "Envoy", "Nginx", "Bash",
   "Microservices", "Serverless", "IaC", "Pulumi", "Helm",
-  "Cloud Native", "VPC", "Vault", "SRE"
+  "Cloud Native", "VPC", "Vault", "SRE", "OpenSearch", "Scala"
 ];
 
 export function LightspeedBackground() {
@@ -70,13 +70,13 @@ export function LightspeedBackground() {
         // Base scale limits so things aren't infinite
         let scale = Math.min(25, w / this.z);
         let depthRatio = 1 - this.z / w;
-        
+
         let alpha = 0;
         if (depthRatio < 0.2) {
           alpha = depthRatio * 5; // fade in gradually
         } else if (this.z < 100) {
           // reaching light speed close to camera -> fade out like star wars
-          alpha = Math.max(0, this.z / 100); 
+          alpha = Math.max(0, this.z / 100);
         } else {
           alpha = 1;
         }
@@ -101,13 +101,13 @@ export function LightspeedBackground() {
           ctx.shadowColor = `rgba(150, 200, 255, ${alpha * 0.6})`;
           ctx.fillStyle = `rgba(240, 248, 255, ${alpha})`;
           ctx.fillText(this.word, x, y);
-          ctx.shadowBlur = 0; 
+          ctx.shadowBlur = 0;
         }
       }
     }
 
     const stars: StarText[] = Array.from({ length: 90 }, () => new StarText());
-    
+
     let targetSpeed = 4;
     let currentSpeed = 4;
     let lightspeedTimer = 0;
@@ -121,10 +121,10 @@ export function LightspeedBackground() {
       lightspeedTimer++;
       if (lightspeedTimer > 400) {
         isLightspeed = !isLightspeed;
-        lightspeedTimer = isLightspeed ? 250 : 0; 
+        lightspeedTimer = isLightspeed ? 250 : 0;
         targetSpeed = isLightspeed ? 50 : 4;
       }
-      
+
       currentSpeed += (targetSpeed - currentSpeed) * 0.03;
 
       stars.forEach(star => {
