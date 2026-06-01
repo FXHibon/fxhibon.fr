@@ -1,9 +1,3 @@
-<div align="center">
-  <img width="1200" height="475" alt="Google AI Studio Banner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
-
-<div align="center">
-
 # 🌌 fxhibon.fr — Immersive Platform Engineer Portfolio
 
 [![Vite](https://img.shields.io/badge/Vite-6.2.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -13,9 +7,6 @@
 [![CI/CD Pipeline](https://img.shields.io/github/actions/workflow/status/fxhibon/fxhibon.fr/docker-publish.yml?branch=main&style=for-the-badge&logo=github-actions&logoColor=white&label=Docker%20Release)](https://github.com/fxhibon/fxhibon.fr/actions)
 
 An ultra-premium, interactive portfolio application built with a high-fidelity **cybernetic space UI** theme. Designed for platform engineers, SREs, and DevOps professionals to showcase high-speed infrastructure credentials, AI-driven integrations, and social pathways.
-
-[View App in Google AI Studio](https://ai.studio/apps/2eff6953-54d7-4208-aa11-269af6a4f0d3)
-</div>
 
 ---
 
