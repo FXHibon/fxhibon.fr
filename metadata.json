@@ -1,0 +1,6 @@
+{
+  "name": "DevProfile",
+  "description": "A modern software/platform engineer profile with a constellation lightspeed background.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
