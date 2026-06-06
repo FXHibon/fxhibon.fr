@@ -4,7 +4,7 @@
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Docker Hub](https://img.shields.io/badge/Docker-Hub-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/fxhibon/fxhibon.fr)
-[![CI/CD Pipeline](https://img.shields.io/github/actions/workflow/status/fxhibon/fxhibon.fr/docker-publish.yml?branch=main&style=for-the-badge&logo=github-actions&logoColor=white&label=Docker%20Release)](https://github.com/fxhibon/fxhibon.fr/actions)
+[![CI/CD Pipeline](https://img.shields.io/github/actions/workflow/status/fxhibon/fxhibon.fr/ci.yml?branch=master&style=for-the-badge&logo=github-actions&logoColor=white&label=Docker%20Release)](https://github.com/fxhibon/fxhibon.fr/actions)
 
 An ultra-premium, interactive portfolio application built with a high-fidelity **cybernetic space UI** theme. Designed for platform engineers, SREs, and DevOps professionals to showcase high-speed infrastructure credentials, AI-driven integrations, and social pathways.
 
@@ -80,7 +80,7 @@ Visit the server at **[http://localhost:8080](http://localhost:8080)**.
 We use GitHub Actions to automate release builds whenever a semantic tag is pushed to the repository.
 
 ### Release Workflow
-When a tag matching the pattern **`v*.*.*`** (e.g., `v1.2.0`) is pushed, the [.github/workflows/docker-publish.yml](file:///.github/workflows/docker-publish.yml) workflow:
+When a tag matching the pattern **`v*.*.*`** (e.g., `v1.2.0`) is pushed, the [.github/workflows/ci.yml](file:///.github/workflows/ci.yml) workflow:
 1. Clones the codebase.
 2. Configures Docker Buildx.
 3. Authenticates with your Docker Hub registry.

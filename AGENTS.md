@@ -24,7 +24,7 @@ Welcome, AI Agent! This repository is designed to be highly agent-friendly. This
 .
 ├── .github/
 │   └── workflows/
-│       └── docker-publish.yml  # GitHub Actions CI/CD (triggers on v*.*.* tags)
+│       └── ci.yml              # GitHub Actions CI/CD (triggers on master pushes/pull requests and tags)
 ├── src/
 │   ├── components/            # Reusable React components
 │   ├── App.tsx                # Main Application entry and UI logic
@@ -81,7 +81,7 @@ To serve this full frontend application, we use a custom Nginx configuration wra
 
 ## 🚀 CI/CD & GitHub Actions
 
-The workflow is located in [docker-publish.yml](file:///.github/workflows/docker-publish.yml).
+The workflow is located in [ci.yml](file:///.github/workflows/ci.yml).
 
 - **Triggers:** On pushing tags matching the pattern `v*.*.*` (e.g. `git tag -a v1.0.0 -m "Release v1.0.0" && git push origin v1.0.0`).
 - **Target Registry:** Docker Hub (`fxhibon/fxhibon.fr`).
